@@ -22,9 +22,6 @@
     <docsUrl>http://codecguide.com/faq.htm</docsUrl>
     <packageSourceUrl>https://github.com/zersh01/chocolatey-k-litecodecpackfull</packageSourceUrl>
     <bugTrackerUrl>http://codecs.forumotion.net/f3-support</bugTrackerUrl>
-    <dependencies> 
-       <dependency id="kb2919355" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
