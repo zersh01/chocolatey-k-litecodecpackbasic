@@ -1,13 +1,14 @@
 ﻿$packageName = 'k-litecodecpackbasic'
 $installerType = 'exe'
-$url = 'https://files3.codecguide.com/K-Lite_Codec_Pack_1630_Basic.exe'
+$url = 'https://files3.codecguide.com/K-Lite_Codec_Pack_1640_Basic.exe'
 $silentArgs = '/VERYSILENT /NORESTART'
                                          
-$checksum = '763d29fa2fa91d5c46e364410025ee56'
+$checksum = '4331bf54a793e7668cab99b003f4a397'
 
 $checksumType = 'md5'
  
 Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url"  -Checksum "$checksum" -ChecksumType "$checksumType"
+
 
 
 
