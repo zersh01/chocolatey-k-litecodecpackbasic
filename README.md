@@ -1,4 +1,4 @@
-# K-LiteCodecPack Standard 
+# K-LiteCodecPack Basic 
 
 The Basic variant is very small and contains only the bare essentials needed for multimedia playback. Despite its small size, it is still very powerful and allows playback of practically every known audio and video format. The Basic variant does not include a player.
 
