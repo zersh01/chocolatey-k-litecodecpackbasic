@@ -1,3 +1,9 @@
-##[K-LiteCodecPack Basic](http://codecguide.com)  for project [Chocolatey](https://chocolatey.org)
-![K-Lite Logo](https://github.com/zersh01/chocolatey-k-litecodecpackmega/blob/master/KLite.png)
-![Chocolatey Logo](https://github.com/chocolatey/chocolatey/raw/master/docs/logo/chocolateyicon.gif)
+# K-LiteCodecPack Standard 
+
+The Basic variant is very small and contains only the bare essentials needed for multimedia playback. Despite its small size, it is still very powerful and allows playback of practically every known audio and video format. The Basic variant does not include a player.
+
+This is Package Source [K-Lite Codec Pack Basic](https://codecguide.com/download_k-lite_codec_pack_basic.htm) for [Chocolatey.org](https://chocolatey.org)
+ [Screenshot MPC-HC](https://raw.githubusercontent.com/zersh01/chocolatey-k-litecodecpack-standart/master/MPC-HC.png)  
+  
+To install K-Lite Codec Pack Standard (used chocolatey), run the following command from the command line or from PowerShell:
+>choco install k-litecodecpackbasic
