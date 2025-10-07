@@ -1,10 +1,14 @@
 import-module au
 
+Set-Location -Path $PSScriptRoot
+Write-Host "Current directory: $(Get-Location)"
+Get-ChildItem -Path . -Filter *.nuspec | ForEach-Object { Write-Host "Found nuspec: $($_.Name)" }
+
 $releases = 'https://www.codecguide.com/download_k-lite_codec_pack_basic.htm'
 
 function global:au_SearchReplace {
     @{
-        ".\tools\chocolateyinstall.ps1" = @{
+        ".\tools\chocolateyInstall.ps1" = @{
             "(?i)(^\s*packageName\s*=\s*)'.*'"   = "`$1'$($Latest.PackageName)'"
             "(?i)(^\s*url\s*=\s*)'.*'"           = "`$1'$($Latest.URL32)'"
             "(?i)(^\s*checksum\s*=\s*)'.*'"      = "`$1'$($Latest.Checksum32)'"
@@ -66,3 +70,4 @@ function global:au_GetLatest {
 
 # Обновляем пакет, скачиваем для проверки хеша (MD5)
 update -ChecksumFor 32
+
